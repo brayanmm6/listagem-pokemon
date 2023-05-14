@@ -1,0 +1,148 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    /* o virgula sans serif é uma alternativa caso o font family falhe */
+    max-width: 1280px;
+    margin: 0 auto;
+    /* no caso do margin quando eu coloco 2 valores o primeiro é altura e o outro largura
+    o auto ajusta automaticamento de acordo com o max-width */
+    background-color: #949494;
+    /* esse numero hexadecimal das cores eu acho na internet */
+    color: #191919
+}
+
+body.modo-escuro{
+    background-color: black;
+    color: azure;
+}
+
+header{
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem_botao{
+    /* quando eu quiser estilizar uma classe dentro de uma tag eu preciso um espaço antes */
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao_altera_tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header #botao_altera_tema:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+    background-color: none;
+}
+
+main .listagem_pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao_pokemon{
+    background-color: #149fe083;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s ease-in-out;
+
+}
+
+main .cartao_pokemon:hover{
+    background-color: greenyellow;
+    transform: scale(1.10);
+    cursor:zoom-in;
+}
+
+main .cartao_pokemon .informacoes{
+    background-color: #949494;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+main .cartao_pokemon .informacoes span{
+    font-size: normal;
+    font-family: freemono;
+    text-transform: uppercase;
+    padding: 4px;
+}
+
+main .cartao_pokemon .gif{
+    width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #949494;
+}
+
+main .tipos{
+    background-color: none;
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+}
+
+main .cartao_pokemon p{
+    text-align: center;
+    text-transform: capitalize;
+    max-height: 80px;
+    overflow-y: scroll;
+    padding-right: 5px;
+}
+
+.tipo_grama{
+    color: green;
+    background-color: rgb(124, 228, 6);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tipo_fogo{
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tipo_inseto{
+    color: rgb(60, 104, 28);
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tipo_voador{
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tipo_veneno{
+    background-color: rgb(60, 104, 28);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tipo_agua{
+    color: blue;
+    background-color: rgb(0 200 200);
+    border-radius: 5px;
+    padding: 5px;
+}
